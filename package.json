@@ -1,0 +1,25 @@
+{
+  "name": "manifester_ar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShawnWhy/manifesterAR.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShawnWhy/manifesterAR/issues"
+  },
+  "homepage": "https://github.com/ShawnWhy/manifesterAR#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "heroku-cli": "^7.0.9",
+    "nodemon": "^2.0.19",
+    "path": "^0.12.7"
+  }
+}
