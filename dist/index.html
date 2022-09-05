@@ -18,7 +18,18 @@
       margin:5px;
       font-weight: bold;
       color:white;
+      display:none;
+      animation:textMove .1s both;
+      text-align: right;
     }
+
+    @keyframes textMove{
+      0%{ transform:translateX(-50px)}
+      100%{transform:translateX(0px)}
+
+    }
+
+  
     #information{
       position: fixed; top: 10px; left:10px; text-align: center; z-index: 1;
       
@@ -54,6 +65,8 @@
       
       <a-entity camera></a-entity>
       <!-- <a-entity gltf-model="./assets/maskevil2.gltf" position="0 1 -6" animation-mixer="timeScale: 1; clip:evilmask;"></a-entity> -->
+      
+      <a-entity light="type: directional; color: #FFF; intensity: 4" position="-0.5 1 1"></a-entity>
 
     </a-scene>
     </div>
@@ -70,21 +83,30 @@
  
     </div>
     <script>
-    var creatureinformation = {
+    var creatureInformation = {
       bull:{
-        name:"",
-        commonName :"",
-        habitat:"",
+        name:"Syncerus wierdus",
+        commonName :"Wierd Cow",
+        habitat:"Northern Greenland",
+        additional:"eats children",
 
 
       },
       whale:{
+        name:"Balaenoptera Fisheus ",
+        commonName :"The whale Fish",
+        habitat:"Under the Dead Trench",
+        additional:"is 5 inches long and lived for abut 3 months after hatching",
 
       },
       bird:{
+        name:"Falco Dinoseus",
+        commonName :"The Dino Bird",
+        habitat:"The Viking Age",
+        additional:"Can evolve into Lazer Raptors",
 
 
-      }
+      } 
 
 
 
